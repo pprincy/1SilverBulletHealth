@@ -1,0 +1,25 @@
+version: 1
+frontend:
+  phases:
+    preBuild:
+      commands:
+        - npm ci
+        # - ls -ltr src/assets/scss/components
+        # - rm -r  src/assets/scss/components/dashboard.scss
+        # - ls -ltr src/assets/scss/components
+        # - echo $BUILD_ENV
+        # - mv src/assets/scss/components/$BUILD_ENV-dashboard.scss src/assets/scss/components/dashboard.scss 
+        # - ls -ltr src/assets/scss/components
+        # - npm install --legacy-peer-deps
+        # - echo $BUILD_ENV_dashboard.scss
+    build:
+      commands:
+        # - npm run $BUILD_ENV
+        - npm run build
+  artifacts:
+    baseDirectory: dist
+    files:
+      - '**/*'
+  cache:
+    paths:
+      - node_modules/**/*

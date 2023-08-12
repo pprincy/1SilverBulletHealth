@@ -1,0 +1,551 @@
+.plandetails-wrap {
+  padding: 60px 0 0 0;
+}
+.fixContainer {
+  width: 92%;
+  max-width: 1010px;
+  margin: auto;
+  border: 0px solid red;
+}
+.plantopcard {
+  // @include flexwrap(flex-start, flex-start);
+  display: flex;
+  align-items: center;
+  padding: 1.25rem;
+  border-top-right-radius: 5px;
+  border-top-left-radius: 5px;
+  background-color: $lavender-web;
+  .planname {
+    @include flexwrap(flex-start, flex-start);
+    flex-direction: column;
+    .img-box {
+      width: 85px;
+      height: auto;
+      display: inline-block;
+      margin-right: 0.75rem;
+    }
+    // .desc {
+    //   font-size: $font-16;
+    //   font-family: $font-base-open;
+    //   font-weight: $font-weight-700;
+
+    //   @include laptop {
+    //     font-size: $font-14;
+    //   }
+    // }
+    .brand-text {
+      color: $basecolor;
+      font-family: $font-base-open;
+      font-size: $font-14;
+      font-weight: 500;
+      line-height: normal;
+    }
+  }
+  ul.plan-info {
+    display: flex;
+    li {
+      padding: 0 2rem;
+      padding-right: 10rem;
+      small {
+        color: $basecolor;
+        font-size: $font-12;
+        font-family: Open Sans, sans-serif;
+        font-weight: 500;
+      }
+      @include laptop {
+        padding: 0 1rem;
+        h4 {
+          font-size: 1rem;
+        }
+      }
+    }
+  }
+  .btn {
+    padding: 0.75rem 1.5rem;
+    @include tablet {
+      padding: 0.5rem 1rem;
+      font-size: $font-14;
+    }
+  }
+}
+
+.tab-hold {
+  padding: 24px 0px;
+  .nav-tabs {
+    padding: 0 30px;
+    .nav-item {
+      .nav-link {
+        color: $philippine-gray;
+        &.active {
+          color: $eerie-black;
+        }
+      }
+    }
+  }
+  .tab-content {
+    padding: 0 30px;
+
+    .info {
+      background-color: $cream;
+      border-radius: 8px;
+      padding: 0px;
+      display: flex;
+
+      .info-item {
+        width: 33.33%;
+        padding: 30px;
+        font-size: $font-14;
+        color: $grey;
+
+        h4 {
+          color: $basecolor;
+          font-size: $font-16;
+          font-family: $font-base-open;
+          font-weight: 700;
+        }
+        .tab-text {
+          color: $grey;
+          font-size: $font-14;
+          font-family: $font-base-open;
+          font-weight: 500;
+          text-align: justify;
+        }
+        @include tablet {
+          width: 100%;
+          padding: 1.25rem;
+        }
+      }
+      @include tablet {
+        display: block;
+      }
+    }
+    .search-hold {
+      display: flex;
+      .select-cnt {
+        width: 180px;
+        border: 1px solid $border3;
+        border-top-left-radius: 5px;
+        border-bottom-left-radius: 5px;
+        padding: 0rem;
+        background-color: $cultured;
+        .normal-select {
+          background-color: transparent;
+          padding: 0.75rem 1rem;
+        }
+      }
+      .search-cnt {
+        width: calc(100% - 180px);
+        border: 1px solid $border3;
+        border-left: none;
+        border-top-right-radius: 5px;
+        border-bottom-right-radius: 5px;
+        padding: 0rem;
+        background-color: $cultured;
+
+        .search-box {
+          width: 100%;
+          background-color: transparent;
+          width: 100%;
+          border: none;
+          padding: 0.75rem 1rem;
+          background-image: url(../assets/icons/search.svg);
+          background-position: right center;
+          background-size: 50px 20px;
+          background-repeat: no-repeat;
+        }
+      }
+    }
+    .hsp-list {
+      display: flex;
+      flex-wrap: wrap;
+      width: 104%;
+      margin: 0 -2% 40px;
+      border: 0px solid green;
+      .hsp-item {
+        width: 33.33%;
+        box-sizing: border-box;
+        padding: 0 2%;
+        border: 0px solid red;
+        @include tablet {
+          width: 50%;
+        }
+      }
+      &.other {
+        p {
+          border-bottom: 1px solid $border3;
+          padding-bottom: 1rem;
+          margin-bottom: 1rem;
+        }
+      }
+      &.scroll-cnt {
+        height: 600px;
+        overflow-y: auto;
+        overflow-x: hidden;
+      }
+    }
+    .claim-top {
+      display: flex;
+      background-color: $cream;
+      border-radius: 0.5rem;
+      padding: 0.75rem 0;
+      margin-bottom: 40px;
+      .item {
+        width: 50%;
+        box-sizing: border-box;
+        padding: 1.25rem 3.125rem;
+        display: flex;
+        align-items: center;
+        .img-box {
+          width: 55px;
+          margin-right: 1rem;
+        }
+      }
+    }
+    .claim-step-hold {
+      display: flex;
+      width: 103%;
+      margin: 0 -1.5% 3% -1.5%;
+      .step {
+        width: 47%;
+        box-sizing: border-box;
+        padding: 30px;
+        margin: 1.5%;
+        -webkit-box-shadow: 0px 0px 24px 0px rgba(0, 0, 0, 0.14);
+        -moz-box-shadow: 0px 0px 24px 0px rgba(0, 0, 0, 0.14);
+        box-shadow: 0px 0px 24px 0px rgba(0, 0, 0, 0.14);
+
+        .step-desc {
+          @include flex(flex-start, center);
+          img {
+            width: 100%;
+            max-width: 70px;
+          }
+          h2 {
+            font-family: $font-base-open;
+            font-weight: $font-weight-700;
+            color: $warning;
+            margin-bottom: 0;
+            margin-left: 1.5rem;
+            font-size: $font-26;
+            @include laptop {
+              font-size: $font-22;
+            }
+            @include tablet {
+              font-size: $font-18;
+            }
+          }
+        }
+        &.step1 {
+          border-top-left-radius: 36px;
+          border-bottom-right-radius: 36px;
+        }
+        &.step2 {
+          border-top-right-radius: 36px;
+          border-bottom-left-radius: 36px;
+        }
+        @include tablet {
+          width: 100%;
+          margin: 1.75rem 0;
+          h4 {
+            font-size: $font-16;
+          }
+        }
+      }
+      @include tablet {
+        display: block;
+        margin: 0rem 0;
+        width: 100%;
+      }
+    }
+    .features-main-block {
+      h4 {
+        color: $basecolor;
+        font-size: $font-16;
+        font-family: $font-base-open;
+        font-weight: 700;
+      }
+    }
+    .features-footer {
+      h4 {
+        color: $basecolor;
+        font-size: $font-16;
+        font-family: $font-base-open;
+        font-weight: 700;
+      }
+      p {
+        text-align: justify;
+      }
+    }
+  }
+}
+@include tablet {
+  h4 {
+    font-size: $font-16;
+  }
+}
+ul.features {
+  display: flex;
+  li {
+    padding: 0.75rem;
+    a {
+      color: $eerie-black;
+      font-size: $font-14;
+      display: inline-block;
+      border-bottom: 3px solid transparent;
+      padding: 0 0 0.35rem 0;
+      font-family: $font-base-open;
+    }
+    &.select,
+    &:hover {
+      a {
+        color: $primary;
+        font-size: $font-14;
+        display: inline-block;
+        border-bottom: 3px solid $warning;
+        padding: 0 0 0.35rem 0;
+        font-family: $font-base-open;
+        font-weight: $font-weight-500;
+      }
+    }
+  }
+}
+
+.wizard-hold {
+  .tab-content {
+    .tab-pane {
+      .tab-body {
+        padding: 0 5rem 1.5rem 5rem;
+        @include tabletPro {
+          padding: 0 1rem 1.5rem 1rem;
+        }
+        .btn-hold {
+          @include flex(center, center);
+          .btn {
+            @include flex(center, center);
+            padding: 0.75rem 2rem;
+          }
+        }
+      }
+    }
+  }
+}
+
+.nav.nav-tabs.wizard-step {
+  border: none;
+  width: 100%;
+  display: flex;
+  margin-bottom: 1.25rem;
+  border-bottom: 1px solid $bg1;
+  padding: 1.5rem 2rem;
+  @include tabletPro {
+    padding: 1.5rem 1rem;
+  }
+  justify-content: space-between;
+  .nav-item {
+    width: 16.66%;
+    display: flex;
+    justify-content: center;
+    position: relative;
+    z-index: 0;
+    align-items: flex-start;
+    .nav-link {
+      border: none;
+      padding: 0;
+      border: 0px solid red;
+      border-radius: 0;
+      width: 100%;
+      background-color: transparent;
+      @include flex(center, center);
+      flex-direction: column;
+      position: relative;
+      z-index: 2;
+      .cir {
+        width: 2rem;
+        height: 2rem;
+        margin: 0.25rem 0;
+        border-radius: 50%;
+        @include flex(center, center);
+        background-color: $white;
+        border: 1px solid $border2;
+        position: relative;
+        z-index: 0;
+        i {
+          font-size: $font-16;
+          color: $pale-cerulean;
+        }
+        span {
+          display: none;
+        }
+      }
+      .txt {
+        color: $pine-gray;
+        font-size: 13px;
+        font-family: $font-base-open;
+        font-weight: $font-weight-500;
+        @include tabletPro {
+          font-size: 8px;
+        }
+      }
+      &::before {
+        content: "";
+        position: absolute;
+        left: 50%;
+        top: 20px;
+        height: 3px;
+        width: 115%;
+        background-color: $border2;
+        z-index: 0;
+        display: flex;
+      }
+    }
+    .nav-link:hover {
+      .cir {
+      }
+    }
+    .nav-link.active {
+      @include flex(center, center);
+      .cir {
+        width: 2.5rem;
+        height: 2.5rem;
+        border: 4px solid $input;
+        background-color: $primary;
+        margin: 0;
+
+        i {
+          color: $white;
+        }
+      }
+      .txt {
+        color: $primary;
+      }
+    }
+    .nav-link.active:hover {
+      .cir {
+      }
+    }
+    .nav-link.completed {
+      @include flex(center, center);
+      &::before {
+        content: "";
+        position: absolute;
+        left: 50%;
+        top: 20px;
+        height: 3px;
+        width: 100%;
+        background-color: $warning;
+        z-index: 0;
+        display: flex;
+      }
+      .cir {
+        background-color: $warning;
+        border-color: $warning;
+        i {
+          display: none;
+        }
+        span {
+          display: flex;
+          font-size: 20px;
+          color: $white;
+        }
+      }
+      .txt {
+        color: $darkgrey;
+      }
+    }
+    &:last-child {
+      .nav-link {
+        &::before {
+          display: none;
+        }
+      }
+    }
+  }
+}
+
+@include tabletPro {
+  .plandetails {
+    .inner-wrapper {
+      padding: 0px 9px 0px 9px;
+    }
+    .features {
+      overflow: auto;
+      text-align: center;
+    }
+    .accordion-body {
+      word-wrap: break-word;
+      p {
+        text-align: left;
+      }
+    }
+    .tab-content {
+      padding: 0 9px;
+      .tab-pane {
+        .claim-top {
+          display: block;
+          padding: 15px 0px 15px 0px;
+          .item {
+            padding: 0px;
+            margin: 0 auto;
+            display: block;
+            .img-box {
+              margin: 0 auto;
+            }
+            p {
+              padding-top: 15px;
+            }
+          }
+          .border-start {
+            border-left: none !important;
+          }
+          div:last-child {
+            margin-top: 25px;
+          }
+        }
+      }
+    }
+    .plantopcard {
+      .plan-info {
+        column-gap: 46px;
+        margin-top: 20px;
+        margin-bottom: 15px;
+      }
+    }
+  }
+}
+
+
+// responsive start here
+@include tabletPro {
+  .plandetails{
+    .wrapper{
+      .inner-wrapper{
+        .tab-hold{
+          .nav-tabs{
+            flex-wrap: nowrap;
+            padding: 0;
+            .nav-item{
+                font-size: 14px;
+              .nav-link{
+                padding: 10px 10px;
+                font-size: 13px;
+              }
+            }
+          }
+          .tab-content{
+            .features{
+              top: 50.3px;
+            }
+            .features-footer{
+              .features-footer-content{
+                row-gap: 10px;
+                div{
+                  width: 100%;
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

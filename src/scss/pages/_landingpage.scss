@@ -1,0 +1,222 @@
+.landing-header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+}
+
+.holder {
+  width: 94%;
+  margin: auto;
+  padding: 1.25rem 0;
+}
+
+.landing {
+  background-color: $bg;
+  width: 100%;
+  /* height: auto; */
+  height: 100vh;
+  display: flex;
+
+  .left-div {
+    background-image: url(../assets/images/bg-shape.png);
+    // width: 50%;
+    width: 54%;
+    height: auto;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+
+    .img-box {
+      width: 80%;
+      height: auto;
+      margin: auto;
+      text-align: center;
+    }
+
+    @include tablet {
+      display: none;
+    }
+  }
+
+  .right-div {
+    // width: 50%;
+    width: 46%;
+    height: auto;
+    border: 0px solid red;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 0px 0;
+    position: relative;
+    @include flex(center, center);
+    flex-direction: column;
+
+    .landingcard {
+      margin: 80px 0 10px 0;
+      background-color: $white;
+      box-shadow: 1px 1px 5px 0px rgba(0, 26, 61, 0.8);
+      border-radius: 0.25rem;
+      padding: 2rem 1.5rem 2rem 1.5rem;
+      width: 95%;
+      height: auto;
+      // border: 1px solid rgb(184, 247, 184);
+      position: relative;
+
+      h1 {
+        font-family: $font-base-open;
+        font-weight: $font-weight-b;
+        font-size: $font-26;
+        color: $primary;
+      }
+
+      h3 {
+        font-family: $font-base-open;
+        font-weight: $font-weight-500, sans-serif;
+        font-weight: 500;
+        font-size: $font-20;
+        color: $black;
+
+        .percentage {
+          font-weight: bold;
+          font-size: 26px;
+          color: $yellow;
+        }
+      }
+    }
+
+    .disterm-cnt {
+      width: 95%;
+      margin: auto;
+      border: 0px solid red;
+      position: relative;
+      bottom: 0;
+      left: auto;
+      right: auto;
+      padding: 0 1rem 0.5rem 1rem;
+
+      .foot-link {
+        width: 300px;
+        margin: auto;
+        @include flex(center, center);
+
+        li {
+          padding: 0 1rem;
+          position: relative;
+
+          a {
+            font-size: $font-12;
+            font-family: $font-base-open;
+            font-weight: bold;
+            color: $blue;
+          }
+
+          &:last-child {
+            &::after {
+              display: none;
+            }
+          }
+
+          &::after {
+            content: "";
+            display: inline-block;
+            width: 1px;
+            height: 18px;
+            background-color: $primary;
+            position: absolute;
+            right: 0;
+            top: 5px;
+          }
+        }
+      }
+    }
+
+    @include tablet {
+      width: 100%;
+    }
+  }
+}
+
+.customer-no {
+  position: fixed;
+  left: 1rem;
+  bottom: 2rem;
+  display: flex;
+  align-items: center;
+
+  .text {
+    display: flex;
+    font-size: $font-14;
+    color: $yellow;
+    font-weight: bold;
+    padding-left: 10px;
+    label {
+      padding-right: 10px;
+    }
+  }
+}
+
+/* ===== Scrollbar CSS ===== *
+  /* Firefox *
+  * {
+    scrollbar-width: thin;
+    scrollbar-color: $warning #c3c3c3;
+  }
+
+  /* Chrome, Edge, and Safari *
+  *::-webkit-scrollbar {
+    width: 8px;
+  }
+
+  *::-webkit-scrollbar-track {
+    background: #c3c3c3;
+    border-radius: 13px;
+  }
+
+  *::-webkit-scrollbar-thumb {
+    background-color: $warning;
+    border-radius: 13px;
+    border: 0px none #ffffff;
+  }
+
+*/
+
+@include tabletPro {
+  .hold {
+    padding: 15px 0px;
+
+    .logo {
+      img {
+        max-width: 85%;
+      }
+    }
+  }
+
+  .right {
+    .dashbrd {
+      margin-right: -10px;
+    }
+
+    .btn-light {
+      padding: 5px 8px;
+    }
+
+    .dropdown {
+      .dropdown-toggle {
+        padding: 2px 18px 2px 2px !important;
+      }
+
+      img {
+        max-width: 23px;
+      }
+    }
+  }
+
+  .right-div {
+    .landingcard {
+      padding: 1.6rem 1.3rem !important;
+      margin: 60px 0 48px 0 !important;
+    }
+  }
+}

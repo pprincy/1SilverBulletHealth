@@ -1,0 +1,21 @@
+
+.header {position: fixed; top: 0; left: 0; width: 100%; z-index: 3;background-color: $primary;
+    .hold { width: 100%; padding: .5rem 3rem; margin: auto;  border: 0px solid red; @include flex(center,center);
+            @include minidesktop { width: 96%; margin: auto; padding: .5rem 2%;} 
+        .right {@include flex(center,center);
+            
+            .btn { height: auto; padding: .25rem 1rem; font-size: $font-14; color: $primary;
+                
+                &.dropdown-toggle {
+                    background-image: url(../assets/icons/chevron-down.svg);
+                    background-repeat: no-repeat;
+                    background-position: right 0.5rem center;
+                    background-size: 12px 9px;
+                    transition: border-color .15s ease-in-out,box-shadow .15s ease-in-out;
+                    border: 1px solid $border5;
+                    padding: 2px 20px 2px 2px;
+                }
+            }
+        }    
+    }
+}

@@ -1,0 +1,186 @@
+.Compare-plan-page{
+    background: #f4f5f7;
+}
+
+.cp-holder {
+    padding: 90px 50px 30px;
+    @include tabletPro { padding: 90px 20px 30px; }
+}
+.cp-heading {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 0 0 20px 0;
+    h3{
+        font-size: 20px;
+        margin: 0;
+        img{
+            margin: 0 0 0 5px;
+        }
+    }
+}
+
+.cp-plan-details {    
+    .checkbox-grp  {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 15px 0;
+        .form-check-input {
+            border-radius: 1px;
+        }
+        input[type=radio] {
+            display: block;
+        }
+    }
+    .cp-col-holder{
+        display: flex;
+        flex-wrap: nowrap;
+        justify-content: space-between;
+        .add-more-plan {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+            img{
+                width: 70px;
+                margin: 0 auto 20px auto;
+            }
+        }
+        &.plan-selected2 {
+            .cp-col{
+                width: 33%;
+            }
+        }
+        .cp-col{
+            width: 25%;
+            background: #fff;
+            margin: 0 5px;
+            padding: 40px 6px 20px 6px;
+            text-align: center;
+            @include tabletPro { width: 100%; }
+            h6{
+                color: #575757;
+                opacity: 0.8;
+                font-size: $font-14;
+                font-family: $font-base-open; font-weight: $font-weight-400;
+                text-transform: capitalize;
+            }
+            &:first-child {
+                text-align: left;
+            }
+        }
+        .cp-company-dtls {
+            text-align: center;
+            position: relative;
+            .close-icon {
+                width: 10px;
+                height: 10px;
+                display: block;
+                position: absolute;
+                right: 20px;
+                top: 10px;
+                img{
+                    width: 100%;
+                    vertical-align: top;
+                }
+            }
+            figure {
+                width: 55px;
+                height: 60px;
+                margin: 0 auto 18px auto;
+                display: block;
+                img {
+                    width: 100%;
+                    height: 100%;
+                    object-fit: contain;
+                    object-position: center;
+                }
+            }
+            h5{
+                margin: 0 0 20px 0;
+                font-size: $font-14;
+            }
+            .cp-amt-number {
+                display: block;
+                margin: 0 0 20px 0;
+                font-size: $font-18;
+            }
+            small {
+                font-size: $font-18;
+                display: block;
+                margin: 0 0 20px 0;
+                text-transform: capitalize;
+            }
+            button{
+                width: 180px;
+                height: 45px;
+                font-family: $font-base-open; font-weight: $font-weight-500;
+                font-size: $font-18;
+                text-transform: uppercase;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                margin: 0 auto;
+            }
+            &:first-child{
+                h6{
+                    color: #575757;
+                    opacity: 0.8;
+                    font-size: $font-14;
+                    line-height: 20px;
+                }
+            }
+        }
+        &.cp-main-dtls {
+            @include tabletPro { overflow: auto; }
+            .cp-col{
+                padding: 15px 30px;
+                margin-bottom: 2px;
+                @include tabletPro { margin-left: 0px; }
+                h6{                    
+                    font-size: $font-14;
+                    line-height: 20px;
+                    font-family: $font-base-open; font-weight: $font-weight-400;
+                    color: $basecolor;
+                    opacity: 1;
+                }
+                &:first-of-type {
+                    h6{
+                        color: #575757;
+                        opacity: 0.8;
+                    }
+                }
+                &.highlighted-row{
+                    background: #fefcf9;
+                }
+            }
+        }
+    }
+    .mid-heading {
+        font-size: 16px;
+        color: $blue;
+        padding: 15px 0px 15px 25px;
+        text-transform: capitalize;
+        background: $lavender-web;
+        width: calc(100% - 9px);
+        display: block;
+        margin: 0 auto;
+        font-family: $font-base-open; font-weight: $font-weight-500;
+        @include tabletPro { width: 100%; }
+    }
+}
+
+.my-text-red {
+    .cp-col {
+        h6 {
+            color: red !important;
+        }
+    }
+}
+
+.Compare-plan-page .cp-plan-details .cp-col-holder .cp-company-dtls small{
+    white-space: nowrap;
+    color: #fff;
+    margin-bottom: 0;
+  }

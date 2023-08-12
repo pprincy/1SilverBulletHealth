@@ -1,0 +1,46 @@
+.wrapper { }
+.container-fluid { padding: 0 3rem;}
+em {display: inline-flex; font-style: normal; justify-content: center; align-items: center;
+    &.icon { width: 1.5rem; height: 1.5rem; border: 0px solid red;
+
+        &.sm {width: 1rem; height: 1rem;}
+        
+        &.icon-prev { background: url(../assets/icons/arrow_chevron.svg) no-repeat; background-size: cover; background-position: center center;}
+        &.icon-phone { background: url(../assets/icons/phone-with-wire-white.svg) no-repeat; background-size: cover; background-position: center center;}
+        &.icon-male { background: url(../assets/icons/male.svg) no-repeat; background-size: 74%; background-position: center center;}
+        &.icon-female { background: url(../assets/icons/female.svg) no-repeat; background-size: cover;}
+        &.icon-trans { background: url(../assets/icons/transgender.svg) no-repeat; background-size: contain;}
+        &.icon-bin { background: url(../assets/images/bin.png) no-repeat; background-size: contain;}
+
+        &.icon-leftarrow { background: url(../assets/icons/arrow_chevron.svg) no-repeat; background-size: cover; background-position: center center; transform: rotate(-90deg);}
+        &.icon-rightarrow { background: url(../assets/icons/arrow_chevron.svg) no-repeat; background-size: cover; background-position: center center; transform: rotate(90deg);}
+
+        
+    }
+    &.cir {width: 1.25rem; height: 1.25rem; border: 1px solid $primary; border-radius: 50%; font-size: 16px; color: $primary; font-weight: 600; }
+
+    &.icon-pngrightarrow {background: url(../assets/images/arrow-right-chevron.png) no-repeat; background-size: auto; background-position: 0px 3px; width: 10px; height: 16px;
+    }
+    &.icon-arrow-left {background: url(../assets/images/left-arrow.png) no-repeat; background-size: auto; background-position: 0px 0px; width: 20px; height: 16px;
+    }
+    &.sort1 {background: url(../assets/images/sort1.png) no-repeat; background-size: auto; background-position: 0px 0px; width: 18px; height: 10px;}
+    &.sort2 {background: url(../assets/images/sort2.png) no-repeat; background-size: auto; background-position: 0px 0px; width: 14px; height: 14px;}
+    &.balance-weight {background: url(../assets/images/balance.png) no-repeat; background-size: auto; background-position: 0px 0px; width: 15px; height: 15px;}
+    &.favorites {background: url(../assets/images/favorites.png) no-repeat; background-size: auto; background-position: 0px 0px; width: 21px; height: 21px;}
+    &.hospital-3 {background: url(../assets/images/hospital-3.png) no-repeat; background-size: auto; background-position: 0px 0px; width: 22px; height: 20px;}
+    &.download {background: url(../assets/images/download.png) no-repeat; background-size: auto; background-position: 0px 0px; width: 18px; height: 18px;}
+    &.star {background: url(../assets/images/star.png) no-repeat; background-size: auto; background-position: 0px 0px; width: 28px; height: 26px;}
+    &.lowest-price {background: url(../assets/images/lowest-price.png) no-repeat; background-size: auto; background-position: 0px 0px; width: 28px; height: 26px;}
+    &.download-new {background: url(../assets/images/download-new.png) no-repeat; background-size: auto; background-position: 0px 0px; width: 33px; height: 33px;}
+    
+}
+.after-none {
+    &::after { display: none;}
+}
+
+/* .white-edge { background: white; @include border-radius; @include shadow;}
+.flex-between-center { @include flex(space-between, center);}
+.flex-start-center { @include flex(flex-start, center);}
+.flex-start-start { @include flex(flex-start, flex-start);}
+.flexwrap { @include flexwrap(flex-start, center);} */
+

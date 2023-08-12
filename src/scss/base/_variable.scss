@@ -1,0 +1,155 @@
+
+
+/*Fonts*/
+$font-icomoon: "icomoon";
+$font-icomoon-src: "icomoon";
+$font-icomoon-hash: "icomoon";
+
+$font-base-open: 'Open Sans', sans-serif;
+
+/*
+$font-base-book: "Gotham-Book";
+$font-base-book-src: "Gotham-Book";
+$font-base-book-hash: "Gotham-Book";
+*/
+/* 
+$font-base-semibold: "Poppins-SemiBold";
+$font-base-semibold-src: "Poppins-SemiBold";
+$font-base-semibold-hash: "Poppins-SemiBold";
+
+/*
+$font-base-thin: "Poppins-Thin";
+$font-base-thin-src: "Poppins-Thin";
+$font-base-thin-hash: "Poppins-Thin";
+ */
+
+$font-10: 0.625rem;
+$font-11: 0.688rem;
+$font-12: 0.75rem;
+$font-13: 0.813rem;
+$font-14: 0.875rem;
+$font-15: 0.938rem;
+$font-16: 1rem;
+$font-18: 1.125rem;
+$font-20: 1.25rem;
+$font-22: 1.375rem;
+$font-24: 1.5rem;
+$font-26: 1.625rem;
+$font-28: 1.75rem;
+$font-30: 1.875rem;
+$font-32: 2rem;
+$font-34: 1.125rem;
+$font-36: 2.25rem;
+$font-38: 2.375rem;
+$font-48: 3rem;
+$font-50: 3.125rem;
+$font-56: 3.5rem;
+
+$enable-negative-margins: true;
+
+$blue:    #0a3f88;
+$indigo:  #6610f2;
+$purple:  #6f42c1;
+$pink:    #d63384;
+$red:     #eb0000;
+$red1:     #dc3545;
+$orange:  #e77817;
+$yellow:  #fa9d17;
+$green:   #009e04;
+$teal:    #20c997;
+$cyan:    #21a5b7;
+
+$white:    #fff;
+$black:    #000;
+$gray-100: #f8f9fa;
+$gray-200: #e9ecef;
+$gray-300: #dee2e6;
+$gray-400: #ced4da;
+$gray-500: #adb5bd;
+$gray-600: #6c757d;
+$gray-700: #495057;
+$gray-800: #343a40;
+$gray-900: #212529;
+
+$primary :      $blue;
+$secondary:     $gray-600;
+$success:       $green;
+$info:          $cyan;
+$warning:       $yellow;
+$danger:        $red;
+$light:         $gray-100;
+$dark:          $gray-900;
+
+$primary-text : #053c6d;
+
+$grey: #575757;
+$darkgrey: #393939;
+$lightgrey: #e6e6e6;
+$bg : #f1f5ff;
+$bg1 : #f4f5f7;
+$bg2 : #fafafa;
+$border1 : #ececec;
+$border2 : #cbe1ff;
+$border3 : #e7ecf2;
+$border4 : #e1e2e4;
+$border5 : #3b65a0;
+$border6 : #e5e5e5;
+$grey-1  : #bfbfbf;
+$grey-2  : #cccccc;
+$input : #d8e4f4;
+$input-bg : #ebf4ff;
+$off-white: #f2f2f2;
+$arrow-color:#8bb3ea;
+$cream:#faf1e2;
+
+$basecolor:#1f1f1f;
+$philippine-gray:#8f8f8f; 
+$eerie-black:#1f1f1f;
+$lavender-web: #E8EFF9;
+$linen:#F9F2E8;
+$islamic_green:#009e04;
+$alabaster:#E5F5E5;
+$mint:#36B37E;
+$misty_rose:#fde5e5;
+$electric_red:#f00000;
+$cultured: #f6f6f6;
+$gainsboro:#DEDEDE;
+$pale-cerulean:#9FBFEA;
+$pine-gray:#909090;
+$granite-gray:#626262;
+
+$form-check-input-width:                  1.125em;
+
+$modal-sm:                          350px;
+$modal-md:                          600px;
+$modal-lg:                          900px;
+$modal-xl:                          1140px;
+
+$accordion-icon-width:                    0.875rem;
+$accordion-button-icon: url(../assets/icons/chevron-down-dark.svg);
+$accordion-button-active-icon:url(../assets/icons/chevron-down-dark.svg);
+
+
+$desktop1: 1470px;
+$desktop2: 1390px;
+$desktop3: 1365px;
+$desktop4: 1279px;
+$desktop5: 1225px;
+$tablet1: 992px;
+$tablet2: 767px;
+$mobile2: 576px;
+$mobile1: 420px;
+$main-bg: #0a3f88;
+$base-text: #111;
+$inner-page-bg : #f4f5f7;
+$font-stack : 'Open Sans', sans-serif;
+$font-weight-b : bold;
+$font-weight-n : normal;
+$font-weight-300 : 300;  
+$font-weight-400 : 400;  
+$font-weight-500 : 500;
+$font-weight-600 : 600;
+$font-weight-700 : 700;
+$font-weight-medium : 500;
+$border-color : #e7ecf2;
+$white: #fff;

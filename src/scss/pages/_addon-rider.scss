@@ -1,0 +1,374 @@
+.addontopcard {
+  @include flex(flex-start, center);
+  padding: 1.25rem;
+  border-top-right-radius: 10px;
+  border-top-left-radius: 10px;
+  background-color: $lavender-web;
+
+  @include tabletPro {
+    display: block;
+  }
+
+  .addonname {
+    @include flex(flex-start, center);
+
+    .img-box {
+      width: 85px;
+      height: auto;
+      display: inline-block;
+      margin-right: 0.75rem;
+    }
+
+    .desc {
+      font-size: $font-16;
+      font-family: $font-base-open;
+      font-weight: $font-weight-600;
+    }
+  }
+
+  ul.addon-info {
+    display: flex;
+    margin-left: auto;
+
+    @include tabletPro {
+      display: block;
+    }
+
+    li {
+      padding: 0 0 0 1rem;
+
+      @include tabletPro {
+        padding: 1rem 0 0;
+      }
+
+      span {
+        white-space: nowrap;
+      }
+    }
+  }
+}
+
+.white-bg {
+  .block {
+    border-bottom: 1px solid $bg2;
+    padding: 30px;
+
+    @include tabletPro {
+      padding: 20px;
+    }
+
+    .slct-box {
+      width: 100%;
+      max-width: 300px;
+      margin-top: 1rem;
+    }
+
+    h4 {
+      color: $eerie-black;
+      font-size: 18px;
+      font-family: $font-base-open;
+      font-weight: 700;
+      margin-bottom: 15px;
+    }
+
+    .input-group {
+      &.input-type-radio {
+        ul {
+          &.three {
+            li {
+              label {
+                .years_sec {
+                  font-weight: 600;
+                  font-size: 18px;
+                  color: #0a3f88;
+                  .text-primary {
+                    font-weight: 600;
+                    font-size: 18px;
+                    color: #0a3f88 !important;
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+
+    .input-group.input-type-radio {
+      .three {
+        li {
+          input:checked+label {
+            border: 1.5px solid #0a3f88;
+          }
+        }
+      }
+
+    }
+  }
+
+  border-bottom-right-radius: 10px;
+  border-bottom-left-radius: 10px;
+}
+
+.rider-box {
+  @include flexwrap(space-between, stretch);
+  width: 104%;
+  margin: 0 -2%;
+
+  @include tabletPro {
+    display: block;
+  }
+
+  li {
+    border: 1px solid $input;
+    border-radius: 4px;
+    padding: 15px 20px;
+    box-sizing: border-box;
+    width: 46%;
+    margin: 2%;
+
+    @include tabletPro {
+      width: 100%;
+      margin: 1rem 0 0;
+    }
+
+    .top {
+      @include flex(space-between, center);
+      margin-bottom: 1rem;
+
+      h5 {
+        margin-bottom: 0;
+        color: $eerie-black;
+        font-size: 16px;
+        font-weight: 600;
+        position: relative;
+        width: 77%;
+      }
+
+      .price {
+        border: 1px solid $warning;
+        border-radius: 4px;
+        padding: 0.25rem 0.5rem;
+        margin-left: 10px;
+        @include flex(space-between, center);
+        color: $warning;
+
+        @include tabletPro {
+          white-space: nowrap;
+        }
+
+        .bi {
+          font-size: 1rem !important;
+        }
+      }
+
+      &.select {
+        .price {
+          border-color: $primary;
+
+          * {
+            color: $primary;
+          }
+        }
+      }
+
+      p {
+        font-size: 1rem;
+        font-weight: 400;
+        color: #2c3e50;
+      }
+    }
+  }
+}
+
+.like-table {
+  li {
+    margin: 0 0 1.25rem 0;
+    border: 1px solid $input;
+    @include borderradius(4px);
+    padding: 20px;
+    @include flex(space-between, center);
+    width: 100;
+
+    @include tabletPro {
+      display: block;
+    }
+
+    .company {
+      @include flex(flex-start, center);
+
+      img {
+        width: 36px;
+        height: auto;
+        margin-right: 10px;
+      }
+
+      span {
+        font-family: $font-base-open;
+        font-weight: $font-weight-500;
+      }
+    }
+
+    .cover {
+      label {
+        font-size: $font-12;
+      }
+
+      select {
+        width: 130px;
+        padding: 0 0 0 0;
+
+        @include tabletPro {
+          width: 100%;
+          margin-top: 1rem;
+        }
+      }
+    }
+
+    .member {
+      label {
+        font-size: $font-12;
+      }
+
+      select {
+        width: 130px;
+        padding: 0 0 0 0rem;
+
+        @include tabletPro {
+          width: 100%;
+          margin-top: 1rem;
+        }
+      }
+    }
+
+    .price {
+      border: 1px solid $warning;
+      border-radius: 4px;
+      padding: 0.25rem 0.5rem;
+      @include flex(space-between, center);
+      color: $warning;
+
+      @include tabletPro {
+        margin-top: 1rem;
+        width: 50%;
+        margin: 0 auto;
+        justify-content: flex-start;
+      }
+
+      &.select {
+        color: $primary;
+        border-color: $primary;
+      }
+    }
+
+    &:last-child {
+      margin-bottom: 0;
+    }
+  }
+}
+
+.addon-right-side {
+  /* padding: 1.25rem 1.875rem; */
+  @include borderradius(10px);
+  background-color: $white;
+
+  @include tabletPro {
+    margin-top: 1rem;
+  }
+
+  h3 {
+    padding: 1.25rem 1.875rem;
+    border-bottom: 3px solid $bg1;
+    margin-bottom: 0;
+  }
+
+  .content {
+    padding: 0rem 1.875rem;
+
+    .flexdiv {
+      @include flexwrap(space-between, flex-end);
+      padding: 0.75rem 0;
+
+      &.linen-bg {
+        margin: 0 -1.875rem;
+        padding: 1.25rem 1.875rem;
+      }
+    }
+  }
+}
+
+.quick-cnt {
+  /* padding: 1.25rem 1.875rem; */
+  @include borderradius(10px);
+  background-color: $white;
+  position: sticky;
+  top: 130px;
+
+  @include tabletPro {
+    position: unset;
+  }
+
+  h3 {
+    padding: 1.25rem 1.875rem;
+    border-bottom: 3px solid $bg1;
+    margin-bottom: 0;
+  }
+
+  .content {
+    padding: 0rem 1.875rem;
+
+    .flexdiv {
+      @include flexwrap(space-between, flex-end);
+      padding: 0.75rem 0;
+
+      &.linen-bg {
+        margin: 0 -1.875rem;
+        padding: 1.25rem 1.875rem;
+      }
+    }
+  }
+}
+
+.addonrider {
+  .input-group {
+    .three {
+      @include tabletPro {
+        display: block !important;
+      }
+
+      li {
+        @include tabletPro {
+          width: 100% !important;
+          margin-top: 1rem;
+        }
+      }
+    }
+  }
+
+  .sticky-top {
+    top: 60px;
+  }
+}
+
+
+// responsive start here
+@include tabletPro {
+  .addonrider {
+    .wrapper {
+      .inner-wrapper {
+        padding: 0 10px;
+      }
+    }
+  }
+}
+
+.addonrider{
+  .pd-right-section1{
+    .btn-warning{
+      width: 340px;
+    }
+  }
+}
+.white-bg .block {
+  padding: 15px 30px;
+}
